@@ -3,7 +3,9 @@ const nextConfig = {
   reactStrictMode: false,
   swcMinify: true,
   images: {
-    domains: ['picsum.photos']
+    domains: ['picsum.photos'],
+    loader: "akamai",
+    path: ""
   },
 }
 
