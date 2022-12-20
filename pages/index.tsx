@@ -14,7 +14,7 @@ interface HomeProps {
 export default function Home({jobList}: HomeProps) {
   const [jobs, setJobs] = useState<IJob[]>([]);
 
-  const [jobPerPage, setJobPerPage] = useState(4);
+  const [jobPerPage, setJobPerPage] = useState(15);
   const [currentPage, setCurrentPage] = useState(1);
   
   function paginate(currentPage: number) {
