@@ -14,7 +14,7 @@ interface HomeProps {
 export default function Home({jobList}: HomeProps) {
   const [jobs, setJobs] = useState<IJob[]>([]);
 
-  const [jobPerPage, setJobPerPage] = useState(5);
+  const [jobPerPage, setJobPerPage] = useState(15);
   const [currentPage, setCurrentPage] = useState(1);
   
   function paginate(currentPage: number) {
@@ -42,7 +42,6 @@ export default function Home({jobList}: HomeProps) {
   
   useEffect(() => {
     setJobs(jobList);
-    setJobPerPage(4);
   }, [])
   
   let lastIndexCurrentPage = jobPerPage * currentPage;
