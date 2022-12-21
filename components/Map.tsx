@@ -37,7 +37,7 @@ export default function Map( {coordinate}: MapProps) {
               keyboardShortcuts: false
             }}
             >        
-                <Image  lat={coordinate.lat} lng={coordinate.lng} src={'/map-pin.svg'} width={26} height={36} alt="marker" />
+                <Image  lat={coordinate.lat} lng={coordinate.lng} src={`${process.env.NEXT_PUBLIC_BASE_PATH}/map-pin.svg`} width={26} height={36} alt="marker" />
             </GoogleMapReact>
     )
 }
