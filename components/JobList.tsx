@@ -28,7 +28,7 @@ export default function JobList({jobs}: JobListProps) {
                     <div className='md:ml-auto flex gap-5 md:order-2 order-1 justify-between md:justify-start'>
                         <div className= "w-[108px] flex justify-center items-center text-center text-secondary">Rating coming soon...</div>
                         <div className='h-full flex flex-col justify-between items-end'>  
-                             <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH}/bookmark.svg`} alt="Bookmark" width={32} height={32}  className="hidden md:block"/>
+                             <Image src="/bookmark.svg" alt="Bookmark" width={32} height={32}  className="hidden md:block"/>
                              <p className='font-proximaNova font-normal text-base tracking-wide text-secondary'>{getPostedTime(job.updatedAt)}</p>
                         </div>
                     </div>
