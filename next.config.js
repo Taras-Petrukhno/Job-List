@@ -7,8 +7,8 @@ const nextConfig = {
     loader: "akamai",
     path: ""
   },
-  basePath: NEXT_PUBLIC_BASE_PATH,
-  assetPrefix: NEXT_PUBLIC_BASE_PATH //the same as basePath, but for static resource like css javascript
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH //the same as basePath, but for static resource like css javascript
 }
 
 module.exports = nextConfig
