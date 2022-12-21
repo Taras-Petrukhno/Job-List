@@ -13,7 +13,6 @@ export default function Pagination({itemPerPage, totalItemCount, paginate, pagin
 
 let [countOfPagSlots, setCountOfPagSlots] = useState(7);
 
-
     useEffect(()=>{
         drawPagination(pagArray())
     },[currentPage])
