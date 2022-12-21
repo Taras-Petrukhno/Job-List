@@ -92,7 +92,7 @@ export async function getStaticProps(context: any) {
   const jobList = await response.json();
 
 
-   // API gives reverse geocoding info
+  // API gives reverse geocoding info
 
   //  let url2 = `https://maps.googleapis.com/maps/api/geocode/json?latlng=`;
   //  let apiKey = ``; //ENTER API KEY HERE
