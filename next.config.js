@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: ['picsum.photos'],
-    loader: "imgix",
+    loader: "akamai",
     path: ""
   },
   basePath: process.env.NEXT_PUBLIC_BASE_PATH,
