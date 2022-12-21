@@ -8,7 +8,7 @@ const nextConfig = {
     path: ""
   },
   basePath: '/Job-List',
-  assetPrefix: '/Job-List/'
+  assetPrefix: '/Job-List/' //the same as basePath, but for static resource like css javascript
 }
 
 module.exports = nextConfig
